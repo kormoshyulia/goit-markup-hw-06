@@ -446,7 +446,7 @@ img {
   padding-top: 72px;
   padding-bottom: 72px;
   background-image: linear-gradient(rgba(46, 47, 66, 70%), rgba(46, 47, 66, 70%)),
-      url(../images/people-office.jpg);
+      url(../images/img-name.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -458,7 +458,7 @@ img {
 @media (min-resolution: 2x) {
   .hero {
       background-image: linear-gradient(rgba(46, 47, 66, 70%), rgba(46, 47, 66, 70%)),
-      url(../images/people-office@2x.jpg);
+      url(../images/img-name_2x.jpg);
   }
 }
 
@@ -564,12 +564,14 @@ img {
       display: flex;
       flex-wrap: wrap;
       column-gap: 24px;
-      row-gap: 72p;
+      row-gap: 72px;
   }
 
   .feature {
       width: calc((100% - 24px) / 2);
-      margin: 0;
+  }
+  .feature-header {
+    text-align: left;
   }
 }
 
@@ -607,7 +609,6 @@ img {
       line-height: 1.2;
       text-align: center;
       letter-spacing: 0.02em;
-      text-align: left;
   }
 
   .feature-text {
@@ -641,16 +642,12 @@ img {
 .team-card {
   background-color: #FFFFFF;
   width: 100%;
-  padding: 0px 0px 32px 0px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.team-card:not(:last-child) {
-  margin-bottom: 72px;
-}
 
 .team-card-img {
-  margin-bottom: 32px;
+  
   width: 100%;
 }
 
@@ -662,6 +659,11 @@ img {
   color: #2e2f42;
   margin-bottom: 8px;
   text-align: center;
+}
+
+.term-container {
+padding-top: 32px;
+padding-bottom: 32px;
 }
 
 .team-p {
@@ -710,7 +712,7 @@ img {
 
 @media screen and (min-width: 768px) {
 
-  .team-container {
+  .team-main-container {
       padding-left: 108px;
       padding-right: 108px;
   }
@@ -906,7 +908,6 @@ img {
   line-height: 1.5;
   color: #F4F4FD;
   letter-spacing: 0.02em;
-  margin-bottom: 72px;
 }
 
 .footer-text {
@@ -924,7 +925,6 @@ img {
   gap: 16px;
   padding: 0;
   justify-content: center;
-  margin-bottom: 72px;
 }
 
 .footer-list-item {
@@ -945,6 +945,9 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-container {
+  margin: 72px;
+}
 .footer-list-link:hover,
 .footer-list-link:focus {
   background-color: #31d0aa;
@@ -1015,6 +1018,7 @@ img {
 
   .footer-container {
       padding-left: 108px;
+      gap: 72px;
   }
 
   .footer-link {
